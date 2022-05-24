@@ -1,9 +1,0 @@
-<?php
-	extract($_REQUEST);
-	$file=fopen("form-save.txt","a");
-	fwrite($file,$uname,"\n");
-	fwrite($file,$month,"\n");
-	fwrite($file,$date,"\n");
-	fclose($file);
-	header("location:cne.html");
-?>
