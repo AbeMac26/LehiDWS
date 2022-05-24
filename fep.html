@@ -1,0 +1,83 @@
+<head>
+	<meta charset="utf-8">
+	<title>FEP</title>
+	<link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+	<div id="header">
+		<h1>FEP Case Manager</h1>
+	</div>
+	
+	<div id="wrapper">
+				
+				<div id="name">
+					<h2>Monthly Numbers</h2>
+					<label for="uname">Name: </lable><input type="text" id="uname" name="uname" value="John Doe" autocomplete="off" required>	
+				</div>
+				<br>
+				<div id="t1">
+				<lable for="month"> Reporting Month:</lable><input type="month" id="month" name="month" size="10" autocomplete="off" required>&emsp;
+				<lable for="date"> Date:</lable><input type="date" id="date" name="date" size="10"autocomplete="off" required> 
+				</div>
+				<br>
+				<br>
+				<br>
+				<table style="width:80%">
+				<tr>
+				<td for="item1"> Current Month's Accuracy?</td>
+				<td style="width:20%"><input type="text" id="item1" name="item1" size="10">%</td> 
+				<td for="item2"> Current Month Positive Closures?</td>
+				<td style="width:20%"><input type="text" id="item2" name="item2" size="10"></td> 
+				</tr>
+				<tr>
+				<td for="item3"> YTD Accuracy?</td>
+				<td><input type="text" id="item3" name="item3" size="10">%</td> 
+				<td for="item4"> YTD Positive Closures?</td>
+				<td><input type="text" id="item4" name="item4" size="10"></td> 
+				</tr>
+				
+				<tr>
+				<td for="item5"> FEP Monthly Participation?</td>
+				<td><input type="text" id="item5" name="item5" size="10"></td> 
+				<td for="item6"> FEP YTD Participation?</td>
+				<td><input type="text" id="item6" name="item6" size="10"></td>
+				</tr>
+				
+				<tr>
+				<td for="item7"> FEP Monthly Training Enrollments?</td>
+				<td><input type="text" id="item7" name="item7" size="10"></td> 
+				<td for="item8"> FEP YTD Training Enrollments?</td>
+				<td><input type="text" id="item8" name="item8" size="10"></td>
+				</tr>
+				<tr>
+				<td for="item9"> FEP Monthly Training Completions?</td>
+				<td><input type="text" id="item9" name="item9" size="10"></td> 
+				<td for="item10"> FEP YTD Training Completions?</td>
+				<td><input type="text" id="item10" name="item10" size="10"></td>
+				</tr>
+				<tr>
+				<td for="item11"> FEP OJT's?</td>
+				<td><input type="text" id="item11" name="item11" size="10"></td> 
+				<td for="item12"> Caseload Size?</td>
+				<td><input type="text" id="item12" name="item12" size="10"></td>
+				</tr>
+				<tr>
+				<td for="item13"> New enrollments?</td>
+				<td><input type="text" id="item13" name="item13" size="10"></td> 		
+				</tr>
+				</table>
+				<br>
+				<div id="sub">
+				<button onclick="store()" type="button">SAVE</button>
+				</div>	
+	   </div>						
+		<br><br><br>
+	   <div id="navigation">
+		<ul id="buttons">
+			<li><a href="index.html">Home Page</a></li> 
+		</ul>	
+	   </div>	
+	   <script src="save.js"></script>
+</body>

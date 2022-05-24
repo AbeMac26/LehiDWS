@@ -1,0 +1,58 @@
+<head>
+	<meta charset="utf-8">
+	<title>Connections</title>
+	<link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+	<div id="header">
+		<h1>Connections Case Manager</h1>
+	</div>
+	
+	<div id="wrapper">
+				
+				<div id="name">
+					<h2>Monthly Numbers</h2>
+					<label for="uname">Name: </lable><input type="text" id="uname" name="uname" value="John Doe" autocomplete="off" required>	
+				</div>
+				<br>
+				<div id="t1">
+				<lable for="month"> Reporting Month:</lable><input type="month" id="month" name="month" size="10" autocomplete="off" required>&emsp;
+				<lable for="date"> Date:</lable><input type="date" id="date" name="date" size="10"autocomplete="off" required> 
+				</div>
+				<br>
+				<br>
+				<br>
+				<table style="width:80%">
+				<tr>
+				<td for="item1"> Total Referrals?</td>
+				<td style="width:20%"><input type="text" id="item1" name="item1" size="10"></td> 
+				<td for="item2"> WRE Completed?</td>
+				<td style="width:20%"><input type="text" id="item2" name="item2" size="10"></td> 
+				</tr>
+				<tr>
+				<td for="item3"> DVOP Referrals?</td>
+				<td><input type="text" id="item3" name="item3" size="10"></td> 
+				<td for="item4"> Number of New Registrations?</td>
+				<td><input type="text" id="item4" name="item4" size="10"></td> 
+				</tr>
+				
+				<tr>
+				<td for="item5"> Number of WR Customer Assigned?</td>
+				<td><input type="text" id="item5" name="item5" size="10"></td> 				
+				</tr>
+				</table>
+				<br>
+				<div id="sub">
+				<button onclick="store()" type="button">SAVE</button>
+				</div>	
+	   </div>						
+		<br><br><br>
+	   <div id="navigation">
+		<ul id="buttons">
+			<li><a href="index.html">Home Page</a></li> 
+		</ul>	
+	   </div>	
+	   <script src="save.js"></script>
+</body>
