@@ -10,6 +10,7 @@ const	SUPABASE_SERVICE_API_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiO
 const _supabase = supabase.createClient(DATABASE_URL, SUPABASE_SERVICE_API_KEY)
 
 async function loadData() {
+console.log("Im here")
 	const { data, error } = await _supabase
 		.from('CnE')
 		.select()
