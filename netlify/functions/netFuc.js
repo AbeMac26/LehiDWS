@@ -9,7 +9,7 @@ const{
 } = process.env;
 
 
-const {createClient} = require('@supabase/supabases-js');
+const {createClient} = require('@supabase/supabase-js');
 const supabase = createClient(DATABASE_URL, SUPABASE_SERVICE_API_KEY);
 
 exports.handler = async event =>{
