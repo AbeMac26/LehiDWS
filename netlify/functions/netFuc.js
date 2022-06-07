@@ -9,7 +9,7 @@ const{
 } = process.env;
 
 
-const {creaeClient} = rquire('@supabase/supabases-js');
+const {createClient} = rquire('@supabase/supabases-js');
 const supabase = createClient(DATABASE_URL, SUPABASE_SERVICE_API_KEY);
 
 export.handler = async event =>{
