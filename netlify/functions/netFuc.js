@@ -1,4 +1,4 @@
-<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+import { createClient } from '@supabase/supabase-js'
 
 const DATABASE_URL = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImF0ZnVyaGlhdmpwZ294dndyam1hIiwicm9sZSI6ImFub24iLCJpYXQiOjE2NTM1MzU2OTMsImV4cCI6MTk2OTExMTY5M30.-NiGB22jxJEMZUVFZ6MwjG7Q5a8otKZuVpFC7hH4X_s;
 
@@ -11,7 +11,7 @@ const SUPABASE_SERVICE_API_KEY = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOi
 //} = process.env;
 
 
-const {createClient} = require('@supabase/supabase-js');
+//const {createClient} = require('@supabase/supabase-js');
 const supabase = createClient(DATABASE_URL, SUPABASE_SERVICE_API_KEY);
 
 exports.handler = async event =>{
