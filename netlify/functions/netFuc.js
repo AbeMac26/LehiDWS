@@ -2,11 +2,11 @@ const DATABASE_URL = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZS
 
 const SUPABASE_SERVICE_API_KEY = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImF0ZnVyaGlhdmpwZ294dndyam1hIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTY1MzUzNTY5MywiZXhwIjoxOTY5MTExNjkzfQ.C1d-ROdD7O-RiWZ-rVzcsta8gw3Hz06gjqktwtrVJMA;
 
-require('dotenv').config();
-const{
-	DATABASE_URL,
-	SUPABASE_SERVICE_API_KEY
-} = process.env;
+//require('dotenv').config();
+//const{
+//	DATABASE_URL,
+//	SUPABASE_SERVICE_API_KEY
+//} = process.env;
 
 
 const {createClient} = require('@supabase/supabase-js');
@@ -14,7 +14,7 @@ const supabase = createClient(DATABASE_URL, SUPABASE_SERVICE_API_KEY);
 
 exports.handler = async event =>{
 
-	const{data, error} = await supabase
+	const { data, error } = await supabase
 		.from('CnE')
 		.insert([
 			{ item1: '100'},
