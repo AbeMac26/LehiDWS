@@ -31,7 +31,7 @@ console.log("Im here")
   		.update([
     			{ Month: 'inMonth', Date: 'inDate' , item1:'inItem1',item2:'inItem2',item3:'inItem3', item4:'inItem4'}
 		])
-		.eq('Name':'inName')
+		.eq(Name:'inName')
  
 
 console.log(data, error)
