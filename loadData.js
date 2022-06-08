@@ -20,13 +20,15 @@ var inName = document.getElementById("uname").value;
  var inItem12 = document.getElementById("item12").value;
  var inItem13 = document.getElementById("item13").value;
  var inItem14 = document.getElementById("item14").value;
-console.log(inName)
 	
 	const { data, error } = await _supabase
   		.from('CnE')
-  		.update([{ Month: inMonth, Date: inDate , item1:'inItem1',item2:'inItem2',item3:'inItem3', item4:'inItem4'}])
+  		.update([{ Month: inMonth, Date: inDate, item1: inItem1, item2: inItem2, item3: inItem3, item4: inItem4, 
+			item5: inItem5, item6: inItem6, item7: inItem7, item8: inItem8, item9: inItem9, item10: inItem10, item11: inItem11,
+			 item12: inItem12, item14: inItem14}])
 		.eq('Name',inName)
- 
+ 	if (error)
+		alert(inName + 'not incorrect')
 
 console.log(data, error)
 
