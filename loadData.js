@@ -36,4 +36,3 @@ console.log("Im here")
 console.log(data, error)
 
 }	
-loadData()
