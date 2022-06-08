@@ -29,7 +29,8 @@ console.log("Im here")
 	const { data, error } = await _supabase
   		.from('CnE')
   		.update([
-    			{ Month: 'inMonth', Date: 'inDate' , item1:'inItem1',item2:'inItem2',item3:'inItem3', item4:'inItem4'}]
+    			{ Month: 'inMonth', Date: 'inDate' , item1:'inItem1',item2:'inItem2',item3:'inItem3', item4:'inItem4'}
+		])
 		.eq('Name':'inName')
  
 
