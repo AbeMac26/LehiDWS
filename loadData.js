@@ -28,9 +28,7 @@ async function loadData() {
 console.log("Im here")
 	const { data, error } = await _supabase
   		.from('CnE')
-  		.insert([
-    			{ Month: 'inMonth', Date: 'inDate' , item1:'inItem1',item2:'inItem2',item3:'inItem3', item4:'inItem4'}
-		])
+  		.insert([{ Month: 'inMonth', Date: 'inDate' , item1:'inItem1',item2:'inItem2',item3:'inItem3', item4:'inItem4'}])
 		.eq(Name:'inName')
  
 
