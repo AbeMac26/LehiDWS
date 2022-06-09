@@ -23,7 +23,7 @@ async function createList() {
 }
    createList()
   
-window.onload = function() {
+function optionList() {
   
   var subjectSel = document.getElementById("counselor")
   var z = outName
@@ -36,3 +36,5 @@ window.onload = function() {
   
   }
 }
+
+optionList()
