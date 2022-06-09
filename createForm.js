@@ -5,7 +5,7 @@ window.onload = function() {
   var z = subjectObject
   console.log(z)
   for (var i = 0; i < z.length; i++){
-    subjectSel.options[subjectSel.options.length] = new Option(z, z)
+    subjectSel.options[subjectSel.options.length] = new Option(z[i], z[i])
   }
   subjectSel.onchange = function() {
     //display correct values
