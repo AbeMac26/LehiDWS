@@ -21,7 +21,7 @@ var inName = document.getElementById("uname").value;
  var inItem11 = document.getElementById("item11").value;
  var inItem12 = document.getElementById("item12").value;
  var inItem13 = document.getElementById("item13").value;
- var inItem14 = document.getElementById("item14").value;
+ 
 	
 
 	if(inName == worker1 ){
