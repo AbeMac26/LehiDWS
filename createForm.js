@@ -11,7 +11,28 @@ async function optionList() {
     subjectSel.options[subjectSel.options.length] = new Option(z[i], z[i])
   }
   subjectSel.onchange = function() {
-    //display correct values
+    var out = JSON.parse(sessionStorage.getItem("counselorNames"))
+    const { data, error } = await _supabase
+            .from('CnE')
+            .select()
+            .eq('Name', out[this.value])
+    //display correct values 
+    document.getElementById("month").value = data.Month
+    document.getElementById("date").value = data.Date 
+    document.getElementById("item1").value = data.item1
+    document.getElementById("item2").value = data.Month
+    document.getElementById("item3").value = data.Month
+    document.getElementById("item4").value = data.Month
+    document.getElementById("item5").value = data.Month
+    document.getElementById("item6").value = data.Month
+    document.getElementById("item7").value = data.Month
+    document.getElementById("item8").value = data.Month
+    document.getElementById("item9").value = data.Month
+    document.getElementById("item10").value = data.Month
+    document.getElementById("item11").value = data.Month
+    document.getElementById("item12").value = data.Month
+    document.getElementById("item13").value = data.Month
+    document.getElementById("item14").value = data.Month
   
   }
 }
