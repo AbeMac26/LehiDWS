@@ -18,7 +18,7 @@ var inName = document.getElementById("uname").value;
 	if(inName == worker1 ){
 
 		const { data, error } = await _supabase
-  			.from('FEP')
+  			.from('connections')
   			.update([{ Month: inMonth, Date: inDate, item1: inItem1, item2: inItem2, item3: inItem3, item4: inItem4, 
 				item5: inItem5, completed: true}])
 			  .eq('Name',inName)
