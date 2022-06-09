@@ -22,11 +22,12 @@ var inName = document.getElementById("uname").value;
   			.update([{ Month: inMonth, Date: inDate, item1: inItem1, item2: inItem2, item3: inItem3, item4: inItem4, 
 				item5: inItem5, completed: true}])
 			  .eq('Name',inName)
- 		if (error)
-			alert(inName + ' not incorrect')
-
+ 		if (error){
+			alert(error.message)
+			console.clear()
+		}
 		console.log(data, error)
 	}
 	else
-    alert(inName + ' you are not a FEP Counselor!')
+    alert(inName + ' you are not a FEP Counselor \n You type your name incorrectly!')
 }
