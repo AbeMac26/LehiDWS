@@ -23,7 +23,7 @@ async function createList() {
     console.log(data)
     console.log(error)
 }
-   createList()
+   
   
 function optionList() {
   var outName = JSON.parse(localStorage.getItem("counselorNames"))
@@ -38,5 +38,6 @@ function optionList() {
   
   }
 }
-
 optionList()
+createList()
+
