@@ -35,11 +35,12 @@ async function createList() {
     localStorage.setItem('counselorNames', JSON.stringify(outName))
     console.log(data)
     console.log(error)
+  optionList()
 }
    
   
 
 createList()
-optionList()
+
 
 
