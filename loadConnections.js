@@ -29,5 +29,5 @@ var inName = document.getElementById("uname").value;
 		console.log(data, error)
 	}
 	else
-    alert(inName + ' you are not a FEP Counselor \n You type your name incorrectly!')
+    alert(inName + ' you are not a FEP Counselor! \n OR \n You type your name incorrectly!')
 }
