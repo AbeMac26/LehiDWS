@@ -17,12 +17,13 @@ async function createList() {
             outName.push(item.Name)  
         })
     }
+    localStorage.setItem('counselorNames', JSON.stringify(outName))
     console.log(data)
     console.log(error)
 }
    createList()
   
-function optionsList() {
+window.onload = function() {
   
   var subjectSel = document.getElementById("counselor")
   var z = outName
@@ -35,4 +36,3 @@ function optionsList() {
   
   }
 }
-optionsList()
