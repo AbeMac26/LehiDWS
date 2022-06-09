@@ -18,9 +18,10 @@ async function createList() {
     console.log(data)
     console.log(error)
 }
+createList()  
   
 window.onload = function() {
-  createList()  
+    
   var subjectSel = document.getElementById("counselor")
   var z = subjectObject
   console.log(z)
