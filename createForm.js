@@ -2,8 +2,9 @@ var subjectObject = ["Links", "Images", "Tables", "Lists"]
   
 window.onload = function() {
   var subjectSel = document.getElementById("counselor");
-  for (var x in subjectObject) {
-    subjectSel.options.length = new Option(x, x);
+  var z = subjectObject[subjectSel.value][this.value];
+  for (var i = 0; i < z.length; i++)
+    subjectSel.options[subjectSel.options.length] = new Option(z[i], z[i]);
   }
   subjectSel.onchange = function() {
     //display correct values
