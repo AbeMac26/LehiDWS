@@ -40,6 +40,6 @@ var inName = document.getElementById("uname").value;
 	}
 
 	else
-		alert(inName + ' you are not a Career & Education Counselor!')
+		alert(inName + ' you are not a Career & Education Counselor! \n OR \n You have typed your name incorrectly!')
 
 }
