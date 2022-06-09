@@ -1,7 +1,5 @@
 var subjectObject = ["Links", "Images", "Tables", "Lists"]  
   
-
-}
 window.onload = function() {
   var subjectSel = document.getElementById("counselor");
   for (var x in subjectObject) {
