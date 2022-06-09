@@ -34,7 +34,7 @@ var inName = document.getElementById("uname").value;
 			.eq('Name',inName)
  		if (error){
 			alert(error.message)
-			Console.clear()
+			console.clear()
 		}
 		console.log(data, error)
 	}
