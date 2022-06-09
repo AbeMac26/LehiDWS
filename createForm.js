@@ -14,7 +14,7 @@ async function createList() {
         data.forEach(function(item){
             subjectObject.push(item.Name)  
         })
-      
+    }
     console.log(data)
     console.log(error)
 }
