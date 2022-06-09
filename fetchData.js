@@ -15,13 +15,11 @@ async function fetchData() {
 	    .eq('completed', true)
 	if(!error) {
         	//loop display data here
-        	const parent = document.getElementById('holder')
-		let text = "<ul id=lname>";
-        	let contents = ''
+		let contents = "<ul id=lname>";
         	data.forEach(function(item){
             contents += `<li> ${item.Name} - ${item.Date}</li>` 
         })
-	text += "</ul>";
+	contents += "</ul>";
         document.getElementById("new").innerHTML = contents;
     }
     console.log(data)
