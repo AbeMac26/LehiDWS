@@ -33,7 +33,7 @@ var inName = document.getElementById("uname").value;
 			 	item12: inItem12, item13: inItem13, completed: true}])
 			.eq('Name',inName)
  		if (error)
-			alert(error)
+			alert(error.message)
 
 		console.log(data, error)
 	}
