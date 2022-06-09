@@ -1,7 +1,8 @@
 const	DATABASE_URL= 'https://atfurhiavjpgoxvwrjma.supabase.co'
 const	SUPABASE_SERVICE_API_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImF0ZnVyaGlhdmpwZ294dndyam1hIiwicm9sZSI6ImFub24iLCJpYXQiOjE2NTM1ODMzNTMsImV4cCI6MTk2OTE1OTM1M30.rW8eEHhilsWb-yKC1o0X4rPhWukF85HEQjcUjjh28IY'
 const _supabase = supabase.createClient(DATABASE_URL, SUPABASE_SERVICE_API_KEY)
-var subjectObject = [] 
+var counselorNames = [] 
+localStorage.setItem('worker1',JSON.stringify(counselorNames))
 
 async function createList() {
     const { data, error } = await _supabase
@@ -9,6 +10,7 @@ async function createList() {
             .select('Name')
             .eq('completed', true)
     
+     var outName = localStorage.getItem("counselorNames");
     if(!error) {
         //loop display data here
         data.forEach(function(item){
@@ -18,10 +20,10 @@ async function createList() {
     console.log(data)
     console.log(error)
 }
-  
+   createList()
   
 window.onload = function() {
-   createList()
+  
   var subjectSel = document.getElementById("counselor")
   var z = subjectObject
   console.log(z)
