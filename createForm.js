@@ -3,7 +3,7 @@ const	SUPABASE_SERVICE_API_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiO
 const _supabase = supabase.createClient(DATABASE_URL, SUPABASE_SERVICE_API_KEY)
 
 async function optionList() {
-  var out = JSON.parse(localStorage.getItem("counselorNames"))
+  var out = JSON.parse(sessionStorage.getItem("counselorNames"))
   var subjectSel = document.getElementById("counselor")
   var z = out
   console.log(z)
@@ -18,8 +18,8 @@ async function optionList() {
 
 async function createList() {
     var counselorNames = [] 
-    localStorage.setItem('counselorNames',JSON.stringify(counselorNames))
-    var outName = JSON.parse(localStorage.getItem("counselorNames"))
+    sessionStorage.setItem('counselorNames',JSON.stringify(counselorNames))
+    var outName = JSON.parse(sessionStorage.getItem("counselorNames"))
     
     const { data, error } = await _supabase
             .from('CnE')
@@ -32,10 +32,10 @@ async function createList() {
             outName.push(item.Name)  
         })
     }
-    localStorage.setItem('counselorNames', JSON.stringify(outName))
+    sessionStorage.setItem('counselorNames', JSON.stringify(outName))
     console.log(data)
     console.log(error)
-  optionList()
+    optionList()
 }
    
   
