@@ -32,9 +32,10 @@ var inName = document.getElementById("uname").value;
 				item5: inItem5, item6: inItem6, item7: inItem7, item8: inItem8, item9: inItem9, item10: inItem10, item11: inItem11,
 			 	item12: inItem12,  item13: inItem13, item14: inItem14, completed: true}])
 			.eq('Name',inName)
- 		if (error)
-			alert(inName + ' not incorrect')
-
+ 		if (error){
+			alert(error.message)
+			console.clear()
+		}
 		console.log(data, error)
 	}
 
