@@ -16,6 +16,7 @@ async function optionList() {
             .from('CnE')
             .select()
             .eq('Name', out[this.value])
+    console.log(data)
     //display correct values 
     document.getElementById("month").value = data.Month
     document.getElementById("date").value = data.Date 
