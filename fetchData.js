@@ -1,22 +1,29 @@
+const worker1 = 'Aaron Aders'
+const worker2 = 'Carie Burnham'
+const worker3 = 'Abel Macias'
+const worker4 = 'Rick Neal'
+const worker5 = 'Mary Vasquez'
 
+const	DATABASE_URL= 'https://atfurhiavjpgoxvwrjma.supabase.co'
+const	SUPABASE_SERVICE_API_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImF0ZnVyaGlhdmpwZ294dndyam1hIiwicm9sZSI6ImFub24iLCJpYXQiOjE2NTM1ODMzNTMsImV4cCI6MTk2OTE1OTM1M30.rW8eEHhilsWb-yKC1o0X4rPhWukF85HEQjcUjjh28IY'
+const _supabase = supabase.createClient(DATABASE_URL, SUPABASE_SERVICE_API_KEY)
 
 async function fetchData() {
-    const { data, error } = await _supabase
-            .from('posts')
+	const { data, error } = await _supabase
+            .from('CnE')
             .select()
-
+	if(!error) {
+        	//loop display data here
+        	const parent = document.getElementById('holder')
+		let text = "<ul id=lname>";
+        	let contents = ''
+        	data.forEach(function(item){
+            contents += `<li> ${item.Name} - ${item.Date}</li>` 
+        })
+	text += "</ul>";
+        document.getElementById("new").innerHTML = contents;
+    }
     console.log(data)
     console.log(error)
 }
 
-if (localStorage.getItem('completed') != null){
-		
-		var oldData = JSON.parse(localStorage.getItem('completed'));
-	
-		let text = "<ul id=lname>";
- 		for (let i = 0; i < oldData.length;i++){
-			text += "<li>" + oldData[i] +" Completed on: "+ Date(2022,11,24) +"</li>";
-		}
-		text += "</ul>";
-		document.getElementById("new").innerHTML = text;
-	}
