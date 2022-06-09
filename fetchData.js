@@ -12,6 +12,7 @@ async function fetchData() {
 	const { data, error } = await _supabase
             .from('CnE')
             .select()
+	    .eq('completed', true)
 	if(!error) {
         	//loop display data here
         	const parent = document.getElementById('holder')
