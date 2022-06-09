@@ -22,7 +22,7 @@ async function createList() {
 }
    createList()
   
-window.onload = function() {
+function optionsList() {
   
   var subjectSel = document.getElementById("counselor")
   var z = outName
@@ -35,3 +35,4 @@ window.onload = function() {
   
   }
 }
+optionsList()
