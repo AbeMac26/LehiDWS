@@ -28,9 +28,9 @@ var inName = document.getElementById("uname").value;
 
 		const { data, error } = await _supabase
   			.from('FEP')
-  			.update([{ Month: inMonth, Date: inDate, item1: inItem1, item2: inItem2, item3: inItem3, item4: inItem4, 
-				item5: inItem5, item6: inItem6, item7: inItem7, item8: inItem8, item9: inItem9, item10: inItem10, item11: inItem11,
-			 	item12: inItem12, item13: inItem13, completed: true}])
+  			.update([{ Month: inMonth, Date: inDate, Item1: inItem1, Item2: inItem2, Item3: inItem3, Item4: inItem4, 
+				Item5: inItem5, Item6: inItem6, Item7: inItem7, Item8: inItem8, Item9: inItem9, Item10: inItem10, Item11: inItem11,
+			 	Item12: inItem12, Item13: inItem13, completed: true}])
 			.eq('Name',inName)
  		if (error){
 			alert(error.message)
