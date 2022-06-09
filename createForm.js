@@ -38,6 +38,7 @@ function optionList() {
   
   }
 }
-optionList()
 createList()
+optionList()
+
 
