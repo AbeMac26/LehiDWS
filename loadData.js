@@ -39,6 +39,6 @@ var inName = document.getElementById("uname").value;
 	}
 
 	else
-		alert(inName + ' you are not a Career & Education Case Manager')
+		alert(inName + ' you are not a Career & Education Counselor!')
 
 }
