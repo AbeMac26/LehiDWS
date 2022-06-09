@@ -10,7 +10,7 @@ async function optionList() {
   for (var i = 0; i < z.length; i++){
     subjectSel.options[subjectSel.options.length] = new Option(z[i], z[i])
   }
-  subjectSel.onchange = function() {
+  subjectSel.onchange = async function() {
     var out = JSON.parse(sessionStorage.getItem("counselorNames"))
     const { data, error } = await _supabase
             .from('CnE')
