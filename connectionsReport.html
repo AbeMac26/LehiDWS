@@ -1,0 +1,141 @@
+<head><Abel Macias
+	May 18, 2022>	
+
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Report Connections</title>
+	<link rel="stylesheet" href="styles.css">
+	<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+</head>
+
+<body>
+	<div id="header">
+		<h1>Monhtly </h1>
+		<h3>One-on-One<br>Connections Counselor Report</h3>
+	</div>
+	<div id="name">
+					
+					
+					<table>
+					<tr>
+						<td>
+							<lable >Name:<select name="counselor" id="counselor">
+    							<option value="" selected="selected">Select Counselor's Name</option>
+  							</select></lable>
+						</td>
+						<td>
+							<p id="prntName"></p>
+						</td>
+						<td>
+						</td>
+						<td>
+							<lable>Month:</lable>
+						</td>
+						<td>
+							<p id="prntMonth"></p>
+						</td>
+					</tr>
+					</table>
+	</div>
+
+	<div id="wrapper">
+			<form>
+				
+				<br>
+				<br>
+				<br>
+				<table style="width:100%">
+				<tr>
+				<td for="item1"> Total Referrals?</td>
+				<td style="width:20%"><input type="text" id="item1" name="item1" size="10"></td> 
+				<td for="item2"> WRE Completed?</td>
+				<td style="width:20%"><input type="text" id="item2" name="item2" size="10"></td> 
+				</tr>
+				<tr>
+				<td for="item3"> DVOP Referrals?</td>
+				<td><input type="text" id="item3" name="item3" size="10"></td> 
+				<td for="item4"> Number of New Registrations?</td>
+				<td><input type="text" id="item4" name="item4" size="10"></td> 
+				</tr>
+				
+				<tr>
+				<td for="item5"> Number of WR Customer Assigned?</td>
+				<td><input type="text" id="item5" name="item5" size="10"></td> 	
+				<td for="item6"> RMTS Corrections?</td>
+				<td><input type="text" id="item6" name="item6" size="10"></td> 			
+				</tr>
+				</table>
+				<br>
+				<br>
+				
+				<div id="t1">
+				<lable for="q1"> Supervisor Observations and Coaching:</lable> <br>
+				<textarea type="text" id="q1" name="q1" rows="4" cols="50"></textarea>
+				</div>
+				<br>
+				<div id="t1">
+				<lable for="q2"> WRE Counselor Edits Feedback and Coaching:</lable><br>
+				<textarea type="text" id="q2" name="q2" rows="4" cols="50"></textarea>
+				</div>
+				<br>
+				<div id="t1">
+				<lable for="q3"> Proficiency Checklist Completed:
+						<select name="yN">
+  						<option value="Yes">Yes</option>
+						<option value="No">No</option>
+						</select>
+				</lable>
+				</div>
+				
+				<br>
+				<div id="t1">
+				<lable for="q3"> Learning Portal Trainings Completed:
+						<select name="yN">
+  						<option value="Yes">Yes</option>
+						<option value="No">No</option>
+						</select>
+				</lable>
+				</div>
+				<br>
+				<div id="t1">
+				<lable for="q4"> What are some areas of performance needing attention?</lable><br>
+				<textarea type="text" id="q4" name="q4" rows="4" cols="50"></textarea>
+				</div>
+				<br>
+				<div id="t1">
+				<lable for="q5"> Do you feel you are receiving sufficient feedback regarding your work?</lable><br>
+				<textarea type="text" id="q5" name="q5" rows="4" cols="50"></textarea>
+				</div>
+				<br>
+				<div id="t1">
+				<lable for="q6"> Is there a need for additional support or training from supervisor/OPS?</lable><br>
+				<textarea type="text" id="q6" name="q6" rows="4" cols="50"></textarea>
+				</div>
+				<br>
+				<div id="t1">
+				<lable for="q2">What is one customer success and/or accomplishments to share this month?</lable><br>
+				<textarea type="text" id="q2" name="q2" rows="4" cols="50"></textarea>
+				</div>
+				<br>
+				<div id="t1">
+				<lable for="q2">What are goals to be set for upcoming month, review prior month goal?</lable><br>
+				<textarea type="text" id="q2" name="q2" rows="4" cols="50"></textarea>
+				</div>
+				<br>
+			</form>	
+	
+	</div>
+	<br><br>
+	<div id="navigation">
+		<ul id="buttons">
+			<li><a href="index.html">Home Page</a></li> 
+		</ul>	
+	 </div>
+
+	<div id="footer">
+		<p>&copy 2022 Abel Macias</p>
+	</div>
+	<script src="createFormJCR.js"></script>
+</body>
+</html>
