@@ -18,6 +18,14 @@ body				{
 				 font-size:36;
 				 text-align: center;
 				}
+#header h1			{
+				margin:0px;
+	
+				}
+#header h2			{
+				margin-top: 0px;
+				
+				}
 #header h2, h3			{
 				 font-size:26;
 				 text-align: center;
