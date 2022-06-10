@@ -18,22 +18,22 @@ function optionList() {
             .eq('Name', this.value)
     console.log(data)
     //display correct values 
-    document.getElementById("month").value = data.Month
-    document.getElementById("date").value = data.Date 
-    document.getElementById("item1").value = data.item1
-    document.getElementById("item2").value = data.Month
-    document.getElementById("item3").value = data.Month
-    document.getElementById("item4").value = data.Month
-    document.getElementById("item5").value = data.Month
-    document.getElementById("item6").value = data.Month
-    document.getElementById("item7").value = data.Month
-    document.getElementById("item8").value = data.Month
-    document.getElementById("item9").value = data.Month
-    document.getElementById("item10").value = data.Month
-    document.getElementById("item11").value = data.Month
-    document.getElementById("item12").value = data.Month
-    document.getElementById("item13").value = data.Month
-    document.getElementById("item14").value = data.Month
+    document.getElementById("month").value = data[0]
+    document.getElementById("date").value = data[1]
+    document.getElementById("item1").value = data[5]
+    document.getElementById("item2").value = data[6]
+    document.getElementById("item3").value = data[7]
+    document.getElementById("item4").value = data[8]
+    document.getElementById("item5").value = data[9]
+    document.getElementById("item6").value = data[10]
+    document.getElementById("item7").value = data[11]
+    document.getElementById("item8").value = data[12]
+    document.getElementById("item9").value = data[13]
+    document.getElementById("item10").value = data[14]
+    document.getElementById("item11").value = data[15]
+    document.getElementById("item12").value = data[16]
+    document.getElementById("item13").value = data[17]
+    document.getElementById("item14").value = data[18]
   
   }
 }
