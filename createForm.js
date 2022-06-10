@@ -19,21 +19,21 @@ function optionList() {
     console.log(data)
     //display correct values 
     document.getElementById("prntMonth").value = data[0].Month
-    document.getElementById("date").value = data[0]
-    document.getElementById("item1").value = data[5]
-    document.getElementById("item2").value = data[6]
-    document.getElementById("item3").value = data[7]
-    document.getElementById("item4").value = data[8]
-    document.getElementById("item5").value = data[9]
-    document.getElementById("item6").value = data[10]
-    document.getElementById("item7").value = data[11]
-    document.getElementById("item8").value = data[12]
-    document.getElementById("item9").value = data[13]
-    document.getElementById("item10").value = data[14]
-    document.getElementById("item11").value = data[15]
-    document.getElementById("item12").value = data[16]
-    document.getElementById("item13").value = data[17]
-    document.getElementById("item14").value = data[18]
+    document.getElementById("date").value = data[0].Date
+    document.getElementById("item1").value = data[0].item1
+    document.getElementById("item2").value = data[0].item2
+    document.getElementById("item3").value = data[0].item3
+    document.getElementById("item4").value = data[0].item4
+    document.getElementById("item5").value = data[0].item5
+    document.getElementById("item6").value = data[0].item6
+    document.getElementById("item7").value = data[0].item7
+    document.getElementById("item8").value = data[0].item8
+    document.getElementById("item9").value = data[0].item9
+    document.getElementById("item10").value = data[0].item10
+    document.getElementById("item11").value = data[0].item11
+    document.getElementById("item12").value = data[0].item12
+    document.getElementById("item13").value = data[0].item13
+    document.getElementById("item14").value = data[0].item14
   
   }
 }
