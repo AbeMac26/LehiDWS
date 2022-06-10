@@ -14,7 +14,7 @@ function optionList() {
     var out = JSON.parse(sessionStorage.getItem("counselorNames"))
     const { data, error } = await _supabase
             .from('CnE')
-            .select()
+            .select('*')
             .eq('Name', out[this.value])
     console.log(data)
     //display correct values 
