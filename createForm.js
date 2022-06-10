@@ -18,7 +18,7 @@ function optionList() {
             .eq('Name', this.value)
     console.log(data)
     //display correct values 
-    document.getElementById("month").value = data[0][Month]
+    document.getElementById("prntMonth").value = data[0].[Month]
     document.getElementById("date").value = data[0]
     document.getElementById("item1").value = data[5]
     document.getElementById("item2").value = data[6]
