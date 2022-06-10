@@ -15,7 +15,7 @@ function optionList() {
     const { data, error } = await _supabase
             .from('CnE')
             .select('*')
-            .eq('Name', out[this.value])
+            .eq('Name', this.value)
     console.log(data)
     //display correct values 
     document.getElementById("month").value = data.Month
