@@ -14,10 +14,14 @@ body				{
 				 background-color:#E4FBB1;
 				 width: 90%;
 				}
-#header					{
-						font-size:36;
-						text-align: center;
-						}						
+#header				{
+				font-size:36;
+				text-align: center;
+				}
+#header h1, h2			{
+				font-size:24;
+				text-align: center;
+						}	
 #name				{
 						text-align: center;
 						}
