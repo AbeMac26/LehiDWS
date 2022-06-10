@@ -30,13 +30,16 @@ body				{
 				padding-left:80px;
 				padding-right:80Px;
 				}	
-						
+#buttons			{
+				margin:auto;
+				}						
 #navigation			{
 				 width:100%;
 				 text-align: center;
 				 overflow:hidden;
 				 line-height: 60px;
 				}
+
 						 
 #buttons li			{
 				 position:relative;
