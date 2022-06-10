@@ -36,12 +36,10 @@ var inName = document.getElementById("uname").value;
 			alert(error.message)
 			console.clear()
 		}
-		console.log(data, error)
+		alert("Your information was submitted!\n Thank you " + inName)
 	}
 
 	else
 		alert(inName + ' you are not a Career & Education Counselor! \n OR \n You have typed your name incorrectly!')
-	
-	alert("Your information was submitted!")
 
 }
