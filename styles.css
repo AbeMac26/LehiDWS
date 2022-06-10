@@ -5,13 +5,14 @@
 						}
 body				{
 				background-color: #CAE9F5;
- 				
+ 				padding-left:50px;
 				}
 #wrapper			{
 				 border: 1px solid;
 				 padding: 10px;
  				 box-shadow: 5px 10px #888888;
 				 background-color:#E4FBB1;
+				 width: 90%;
 				}
 #header					{
 						font-size:36;
@@ -63,7 +64,7 @@ body				{
 
 						}
 table					{
-						padding-left: 180px;	
+						padding-left: 100px;	
 						}
 #t1,#sub, #mess, #topMess			{
 						text-align:center;
