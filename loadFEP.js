@@ -37,7 +37,9 @@ var inName = document.getElementById("uname").value;
 			console.clear()
 		}
 		console.log(data, error)
+		alert("Your information was submitted!\n Thank you " + inName)
 	}
 	else
-    alert(inName + ' you are not a FEP Counselor! \n OR \n You have typed your name incorrectly!')
+    	alert(inName + ' you are not a FEP Counselor! \n OR \n You have typed your name incorrectly!')
+	
 }
