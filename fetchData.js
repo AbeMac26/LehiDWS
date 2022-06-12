@@ -14,15 +14,15 @@ const _supabase = supabase.createClient(DATABASE_URL, SUPABASE_SERVICE_API_KEY)
             contents += `${item.Name}: Date completed ${item.Date}` 
         })
         contents += "</li>"
-        document.getElementById("ulname").innerHTML = contents
+        document.getElementById("lname").innerHTML = contents
     }
     console.log(error)
 }
 fetchFep()
 
 async function fetchJCR() {
-const supabase = supabase.createClient(DATABASE_URL, SUPABASE_SERVICE_API_KEY)
-	const { data, error } = await supabase
+const _supabase = supabase.createClient(DATABASE_URL, SUPABASE_SERVICE_API_KEY)
+	const { data, error } = await _supabase
             .from('connections')
             .select()
 	    .eq('completed', true)
