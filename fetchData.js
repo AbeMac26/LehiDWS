@@ -54,7 +54,7 @@ async function fetchData() {
     }
 	fetchFep()
 	fetchJCR()
-    console.log(data)
+    console.log(fetchJCR())
     console.log(error)
 }
 
