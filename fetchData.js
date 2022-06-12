@@ -14,7 +14,7 @@ const _supabase = supabase.createClient(DATABASE_URL, SUPABASE_SERVICE_API_KEY)
             contents += `<li>${item.Name}: Date completed ${item.Date}</>` 
         })
         contents += "</ul>"
-        document.getElementById("lname").innerHTML = contents
+        document.getElementById("new3").innerHTML = contents
     }
     console.log(error)
 }
