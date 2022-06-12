@@ -26,7 +26,8 @@ var inName = document.getElementById("uname").value;
 			alert(error.message)
 			console.clear()
 		}
-		console.log(data, error)alert("Your information was submitted!\n Thank you " + inName)
+		console.log(data, error)
+		alert("Your information was submitted!\n Thank you " + inName)
 	else
     		alert(inName + ' you are not a Connections Counselor! \n OR \n You type your name incorrectly!')
 }
