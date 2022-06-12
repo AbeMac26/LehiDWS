@@ -33,6 +33,7 @@ async function fetchJCR() {
 	contents += "</ul>"
         document.getElementById("new").innerHTML = contents
       }
+	console.log(data)
     console.log(error)
 }
 
