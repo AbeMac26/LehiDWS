@@ -90,7 +90,7 @@ table				{
 				 text-align:right;
 				}
 						
-#lname				{
+#lname, #lnamejcr, #lnamefep	{
 				 list-style-type: none;
 				}
 						
