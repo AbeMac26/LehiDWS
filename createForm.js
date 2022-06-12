@@ -23,16 +23,16 @@ function optionList() {
     document.getElementById("item2").value = data[0].item2
     document.getElementById("item3").value = data[0].item3
     document.getElementById("item4").value = data[0].item4
-    document.getElementById("item5").value = data[0].item5
-    document.getElementById("item6").value = data[0].item6
-    document.getElementById("item7").value = data[0].item7
-    document.getElementById("item8").value = data[0].item8
-    document.getElementById("item9").value = data[0].item9
-    document.getElementById("item10").value = data[0].item10
-    document.getElementById("item11").value = data[0].item11
-    document.getElementById("item12").value = data[0].item12
-    document.getElementById("item13").value = data[0].item13
-    document.getElementById("item14").value = data[0].item14
+    document.getElementById("item6").value = data[0].item5
+    document.getElementById("item7").value = data[0].item6
+    document.getElementById("item8").value = data[0].item7
+    document.getElementById("item9").value = data[0].item8
+    document.getElementById("item10").value = data[0].item9
+    document.getElementById("item11").value = data[0].item10
+    document.getElementById("item12").value = data[0].item11
+    document.getElementById("item13").value = data[0].item12
+    document.getElementById("item14").value = data[0].item13
+    document.getElementById("item16").value = data[0].item14
   
   }
 }
