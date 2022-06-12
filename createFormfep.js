@@ -31,7 +31,7 @@ function optionList() {
     document.getElementById("item10").value = data[0].item10
     document.getElementById("item11").value = data[0].item11
     document.getElementById("item12").value = data[0].item12
-    document.getElementById("item13").value = data[0].item13
+    document.getElementById("item14").value = data[0].item13
   }
 }
 
