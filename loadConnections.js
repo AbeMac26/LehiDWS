@@ -28,6 +28,7 @@ var inName = document.getElementById("uname").value;
 		}
 		console.log(data, error)
 		alert("Your information was submitted!\n Thank you " + inName)
+	}
 	else
     		alert(inName + ' you are not a Connections Counselor! \n OR \n You type your name incorrectly!')
 }
