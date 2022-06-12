@@ -50,8 +50,8 @@ async function fetchData() {
 	if(!error) {
         	//loop display data here
 		let contents = "<ul id=lname>"
-		fetchFep(contents)
-		fetchJCR(contents)
+		contents += fetchFep(contents)
+		contents += fetchJCR(contents)
         	data.forEach(function(item){
             contents += `<li> ${item.Name}: Date completed ${item.Date}</li>` 
         })
