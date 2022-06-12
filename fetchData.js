@@ -9,7 +9,7 @@ const _supabase = supabase.createClient(DATABASE_URL, SUPABASE_SERVICE_API_KEY)
 	    .eq('completed', true)
 	if(!error) {
         	//loop display data here
-		let contents = "<ul id="lnamefep">";
+		let contents = '<ul id="lnamefep">';
         	data.forEach(function(item){
             contents += `<li>${item.Name}: Date completed ${item.Date}</>` 
         })
@@ -28,11 +28,11 @@ const _supabase = supabase.createClient(DATABASE_URL, SUPABASE_SERVICE_API_KEY)
 	    .eq('completed', true)
 	if(!error) {
         	//loop display data here
-		let contents = "<ul id="lnamejcr">";
+		let contents = '<ul id="lnamejcr">';
         	data.forEach(function(item){
             contents += `<li>${item.Name}: Date completed ${item.Date}</li>` 
         })
-	contents += "</ul>"
+	contents += '</ul>'
         document.getElementById("new2").innerHTML = contents
       }
 	console.log(data)
@@ -48,11 +48,11 @@ const _supabase = supabase.createClient(DATABASE_URL, SUPABASE_SERVICE_API_KEY)
 	    .eq('completed', true)
 	if(!error) {
         	//loop display data here
-		let contents = "<ul id="lname">";
+		let contents = '<ul id="lname">';
         	data.forEach(function(item){
             contents += `<li>${item.Name}: Date completed ${item.Date}</li>` 
         })
-	contents += "</ul>"
+	contents += '</ul>'
         document.getElementById("new").innerHTML = contents
     }
 	
