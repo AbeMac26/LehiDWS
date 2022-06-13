@@ -21,7 +21,8 @@ body				{
 				 text-align: center;
 				 background-image:url("Lehi.jpg");
 				 background-size: contain;
-				 width:100%;
+				background-repeat:no-repeat;
+				 width:90%;
 				}
 #header h1			{
 				margin:0px;
