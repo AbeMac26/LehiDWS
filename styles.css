@@ -23,7 +23,7 @@ body				{
 				 background-image:url("Lehi.jpg");
 				 background-size: cover;
 				background-repeat:no-repeat;
-				 width:9%;
+				 width:auto;
 				}
 #header h1			{
 				margin:0px;
